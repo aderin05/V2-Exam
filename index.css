@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap);
+
+body{
+    margin: 0;
+    background-color: #E2E9F0;
+    font-family: 'Lato', sans-serif;
+}
+
+li{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: #000;
+}
+
+nav ul:last-child li:first-child a, section div a:last-child{
+    color: #0065FE;
+}
+
+nav ul:last-child li:last-child a, section div a:first-child{
+    color: #fff;
+}
+
+nav ul:last-child li:last-child, section div a:first-child{
+    background-color: #0065FE;
+    border-radius: 20px;
+}
+
+section{
+    width: 70%;
+    margin: auto;
+}
+
+section h1{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+section h1 > span{
+    color: #0065FE;
+}
+
+section p{
+    text-align: center;
+    margin: 0 15%;
+}
+
+section div{
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+section div a{
+    padding: 10px 30px;
+}
+
