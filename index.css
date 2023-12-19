@@ -8,6 +8,9 @@ body{
 
 li{
     list-style: none;
+}
+
+nav ul li{
     padding: 10px 20px;
 }
 
@@ -21,7 +24,7 @@ nav{
     align-items: center;
 }
 
-ul{
+nav ul{
     display: flex;
     justify-content: space-between;
 }
@@ -30,46 +33,232 @@ nav a{
     color: #000;
 }
 
-nav ul:last-child li:first-child a, section div a:last-child{
+nav ul:last-child li:first-child a, .section1 div a:last-child{
     color: #0065FE;
 }
 
-nav ul:last-child li:last-child a, section div a:first-child{
+nav ul:last-child li:last-child a, .section1 div a:first-child{
     color: #fff;
 }
 
-nav ul:last-child li:last-child, section div a:first-child{
+nav ul:last-child li:last-child, .section1 div a:first-child{
     background-color: #0065FE;
     border-radius: 20px;
 }
 
-section{
+.section1{
     width: 70%;
     margin: auto;
 }
 
-section h1{
+.section1 h1{
     text-align: center;
     font-size: 3rem;
     line-height: 1.5;
 }
 
-section h1 > span{
+.blue{
     color: #0065FE;
 }
 
-section p{
+.section1 p{
     text-align: center;
     margin: 0 15%;
 }
 
-section div{
+.section1 div{
     margin: 30px auto;
     display: flex;
     justify-content: center;
 }
 
-section div a{
+.section1 div a{
     padding: 10px 30px;
 }
 
+#image{
+    display: block;
+    margin: 50px auto;
+}
+
+#bg-image{
+    width: 100%;
+}
+
+.section2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr;
+    align-items: center;
+    background-color: #F9FBFD;
+    padding: 10px 0;
+}
+
+.section2 h2{
+    text-align: left;
+    padding: 25px 100px 0;
+}
+
+h2{
+    font-size: 2.4rem;
+    margin: 0 0 10px;
+}
+
+.section2 ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.section2 ul li{
+    flex-grow: 1;
+    text-align: center;
+    padding: 0;
+}
+
+.section3{
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: 0.5fr 0.7fr;
+    padding: 100px;
+    margin: 0;
+}
+
+.section3 > div{
+    margin-right: 150px;
+}
+
+.section3 > div > p{
+    margin-left: 10px;
+}
+
+.section3 section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 20px;
+}
+
+.section4{
+    background-color: #fff;
+    margin: 0;
+    padding: 50px 0;
+}
+
+.section4 > div{
+    width: 40%;
+    margin: 50px auto;
+}
+
+.section4 > div > h2, .section4 > div > p{
+    text-align: center;
+}
+
+.section4 > section{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section4 > section div{
+    padding-left: 80px;
+    border-radius: 12px;
+}
+
+.section4 > section div:not(:nth-child(2)) {
+    height: 400px;
+    margin-top: 100px;
+    border: 1px solid #005AE2;
+}
+
+.section4 > section div:first-child{
+    border-right: none;
+    margin-right: -10px;
+}
+
+.section4 > section div:last-child{
+    border-left: none;
+    margin-left: -10px;
+}
+
+.section4 > section div:nth-child(2){
+    height: 600px;
+    background-color: #1E3448;
+    color: #fff;
+    z-index: 2;
+}
+
+.section4 > section div:nth-child(2) p:first-child{
+    margin-top: 110px;
+}
+
+.section4 ul{
+    padding: 0;
+}
+
+.section4 ul li{
+    margin: 20px 0;
+}
+
+.section4 ul li > img{
+    margin-right: 10px;
+}
+
+.section4 > span{
+    margin: auto;
+    display: block;
+    width: 25%;
+}
+
+.section4 > span > a{
+    border: 1px solid #005AE2;
+    border-radius: 100px;
+    margin: 5px;
+}
+
+.section4 > span > a:first-child{
+    color: #005AE2;
+    padding: 10px 15px;
+}
+
+
+.section4 > span > a:last-child{
+    color: #fff;
+    background-color: #005AE2;
+    padding: 10px 25px;
+}
+
+.section5{
+    background-color: #1E3448;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.section5 div{
+    background-color: #fff;
+    width: 30%;
+    height: 400px;
+    top: 50px;
+    left: 35%;
+    margin: auto;
+    position: absolute;
+    border-radius: 12px;
+    padding: 0 50px;
+}
+
+input, select{
+    border: 1px solid #005AE2;
+    width: 46%;
+    margin: 20px 5px;
+    border-radius: 12px;
+    padding: 15px 0 15px 5px;
+}
+
+input:first-child, input[type=submit]{
+    width: 100%;
+}
+
+input:first-child{
+    margin-top: 50px;
+}
